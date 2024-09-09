@@ -134,7 +134,7 @@ void OpenCLConvolution2D(Matrix *input0, Matrix *input1, Matrix *result)
 
 
     // @@ define local and global work sizes
-    size_t global_item_size[2] = {input0->shape[1], input0->shape[0], IMAGE_CHANNELS};
+    size_t global_item_size[2] = {input0->shape[1], input0->shape[0]};
 
 
 

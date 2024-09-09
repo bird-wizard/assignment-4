@@ -12,10 +12,10 @@ __kernel void convolution2D(
     const int maskRadius = maskWidth / 2;
 
     // for i from 0 to height do
-    int row = get_global_id(1);
+    int i = get_global_id(1);
     
     // for j from 0 to width do
-    int column = get_global_id(0);
+    int j = get_global_id(0);
 
     // for k from 0 to channels
     for (int k = 0; k < imageChannels; ++k) {
